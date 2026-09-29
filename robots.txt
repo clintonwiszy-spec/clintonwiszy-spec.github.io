@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Replace the placeholder domain with the final domain after publication.
+Sitemap: https://YOUR-DOMAIN.example/sitemap.xml
