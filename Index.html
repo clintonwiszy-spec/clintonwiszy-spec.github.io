@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Clinton Wiszy | IT Administrator | Network & Cybersecurity</title>
+
+  <meta name="description" content="Professional portfolio of Clinton Wiszy — IT Administrator, Systems & Network Specialist, and Cybersecurity Professional.">
+  <meta name="keywords" content="Clinton Wiszy, IT Administrator, Network Engineer, System Administrator, Cybersecurity, CCNA, MCSE, CEH, IT Support">
+  <meta name="author" content="Clinton Wiszy">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #061525;
+      color: #eaf4ff;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header {
+      background: #020b18;
+      padding: 22px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #173858;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .logo span {
+      color: #16d9ff;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #c9d9e8;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #16d9ff;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      padding: 80px 0;
+    }
+
+    .hero-card {
+      background: #081b2e;
+      border: 1px solid #173858;
+      border-radius: 30px;
+      padding: 60px;
+      width: 100%;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+    }
+
+    .tagline {
+      color: #16d9ff;
+      font-weight: bold;
+      letter-spacing: 4px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: clamp(48px, 8vw, 90px);
+      line-height: 1.05;
+      margin-bottom: 25px;
+    }
+
+    h1 span {
+      color: #16d9ff;
+    }
+
+    .hero h2 {
+      font-size: clamp(24px, 4vw, 38px);
+      color: #c9d9e8;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #b8c9da;
+      max-width: 800px;
+      margin-bottom: 30px;
+    }
+
+    .badges {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-bottom: 35px;
+    }
+
+    .badge {
+      border: 1px solid #16d9ff;
+      border-radius: 30px;
+      padding: 10px 22px;
+      font-weight: bold;
+      background: #07182a;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 25px;
+      border-radius: 12px;
+      font-weight: bold;
+      border: 1px solid #16d9ff;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #16d9ff;
+      color: #02101c;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: #eaf4ff;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      font-size: 40px;
+      margin-bottom: 35px;
+      color: #16d9ff;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #081b2e;
+      border: 1px solid #173858;
+      border-radius: 20px;
+      padding: 30px;
+    }
+
+    .card h3 {
+      color: #16d9ff;
+      margin-bottom: 12px;
+      font-size: 23px;
+    }
+
+    .card p {
+      color: #b8c9da;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      background: #0b243d;
+      border: 1px solid #1d486d;
+      border-radius: 10px;
+      padding: 10px 16px;
+      color: #dcecff;
+    }
+
+    .contact-box {
+      text-align: center;
+      background: #081b2e;
+      border: 1px solid #173858;
+      border-radius: 25px;
+      padding: 50px 25px;
+    }
+
+    .contact-box p {
+      margin: 12px 0;
+      color: #c4d4e4;
+    }
+
+    footer {
+      background: #020b18;
+      padding: 30px 0;
+      text-align: center;
+      color: #8fa4b8;
+      border-top: 1px solid #173858;
+    }
+
+    @media (max-width: 700px) {
+      header .container {
+        flex-direction: column;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .hero-card {
+        padding: 35px 25px;
+      }
+
+      .hero {
+        padding: 40px 0;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <div class="logo">CLINTON <span>WISZY</span></div>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-card">
+
+          <div class="tagline">
+            IT • Networking • Cybersecurity
+          </div>
+
+          <h1>
+            Clinton <span>Wiszy</span>
+          </h1>
+
+          <h2>
+            IT Administrator • Systems & Network Specialist • Cybersecurity Professional
+          </h2>
+
+          <p>
+            IT professional focused on system administration, network engineering,
+            IT infrastructure, Microsoft technologies and cybersecurity.
+            Building practical technical capability to help create safer and
+            more reliable digital environments.
+          </p>
+
+          <div class="badges">
+            <div class="badge">CCNA</div>
+            <div class="badge">MCSE</div>
+            <div class="badge">CEH</div>
+          </div>
+
+          <div class="buttons">
+            <a href="#contact" class="btn btn-primary">
+              Professional Contact
+            </a>
+
+            <a href="#skills" class="btn btn-secondary">
+              Explore Skills
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+
+        <h2 class="section-title">About Me</h2>
+
+        <div class="card">
+          <p>
+            I am an IT professional specializing in Network Engineering,
+            System Administration, IT Infrastructure and Cybersecurity.
+            My technical interests include Microsoft systems, networking,
+            infrastructure support, endpoint security and digital security.
+          </p>
+
+          <br>
+
+          <p>
+            I am continuously developing practical skills through technical
+            labs, infrastructure projects and cybersecurity learning.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="container">
+
+        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="skills">
+
+          <div class="skill">Cisco</div>
+          <div class="skill">TCP/IP</div>
+          <div class="skill">LAN/WAN</div>
+          <div class="skill">VLAN</div>
+          <div class="skill">VPN</div>
+          <div class="skill">DNS</div>
+          <div class="skill">DHCP</div>
+          <div class="skill">Windows Server</div>
+          <div class="skill">Active Directory</div>
+          <div class="skill">Group Policy</div>
+          <div class="skill">Microsoft 365</div>
+          <div class="skill">VMware</div>
+          <div class="skill">Network Security</div>
+          <div class="skill">Windows 10/11</div>
+          <div class="skill">IT Support</div>
+          <div class="skill">Hardware Troubleshooting</div>
+          <div class="skill">Wi-Fi Troubleshooting</div>
+          <div class="skill">Endpoint Security</div>
+          <div class="skill">Cybersecurity</div>
+          <div class="skill">Technical Support</div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+      <div class="container">
+
+        <h2 class="section-title">Certifications</h2>
+
+        <div class="grid">
+
+          <div class="card">
+            <h3>CCNA</h3>
+            <p>
+              Cisco networking knowledge including routing, switching,
+              IP addressing, VLANs and network troubleshooting.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>MCSE</h3>
+            <p>
+              Microsoft systems and infrastructure knowledge including
+              Windows Server and enterprise administration concepts.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>CEH</h3>
+            <p>
+              Cybersecurity and ethical hacking knowledge covering
+              security concepts, vulnerabilities and defensive awareness.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section>
+      <div class="container">
+
+        <h2 class="section-title">Professional Areas</h2>
+
+        <div class="grid">
+
+          <div class="card">
+            <h3>IT Administration</h3>
+            <p>
+              System administration, user support, account management,
+              Microsoft environments and troubleshooting.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Network Engineering</h3>
+            <p>
+              Network configuration, TCP/IP, LAN/WAN, VLAN, VPN,
+              DNS, DHCP and connectivity troubleshooting.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Cybersecurity</h3>
+            <p>
+              Security awareness, endpoint protection, vulnerability
+              concepts, network security and defensive practices.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+
+        <div class="contact-box">
+
+          <h2 class="section-title">Professional Contact</h2>
+
+          <p>
+            Interested in IT Administration, Network Engineering,
+            Infrastructure or Cybersecurity opportunities?
+          </p>
+
+          <!-- Replace these with your real details -->
+          <p>
+            <strong>Email:</strong>
+            YOUR_EMAIL@example.com
+          </p>
+
+          <p>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/" target="_blank">
+              LinkedIn Profile
+            </a>
+          </p>
+
+          <p>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/clintonwiszy-spec" target="_blank">
+              GitHub Profile
+            </a>
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>
+        © 2026 Clinton Wiszy.
+        IT Administrator | Systems & Network Specialist | Cybersecurity
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
